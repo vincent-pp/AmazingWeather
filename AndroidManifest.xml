@@ -17,6 +17,13 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
+        <service android:name="com.amazingweather.app.service.AutoUpdateService">
+        </service>
+        
+        <receiver android:name="com.amazingweather.app.receiver.AutoUpdateAlarmReceiver">
+        </receiver>        
+        
         <activity
             android:name="com.amazingweather.app.activity.ChooseAreaActivity"
             android:label="@string/app_name" >
